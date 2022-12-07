@@ -54,7 +54,7 @@ draw-grid=false
 ## Papirus PNG
 
 Since freeBSD still uses `imlib 1.7` it does not support `svg icon display`
-for apps like xmenu, dunst, etc. For xmenu I converted all Papirus app icons
+for apps like xmenu, dunst, etc. I converted all Papirus app icons
 into png.
 
 ## Software used
