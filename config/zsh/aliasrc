@@ -1,0 +1,27 @@
+#!/bin/sh
+#set opts
+
+alias aliasrc='bat $HOME/.config/zsh/aliasrc'
+
+# add opts./replace commands
+alias \
+	grep='grep --color=auto' \
+	cp='cp -iv' \
+	ls='exa -lag' \
+	bat='bat -p' \
+	wget='wget --hsts-file="$XDG_CONFIG_HOME"/wget-hsts' \
+	gpg2='gpg2 --homedir "$XDG_DATA_HOME"/gnupg' \
+
+# abreviate
+alias \
+	c='/usr/bin/clear' \
+	v='nvim' \
+	d='devour' \
+	..='cd ..' \
+	...='cd ../..'
+
+alias \
+	update="sudo pkg upgrade" \
+	cache="sudo pkg clean -a" \
+	cleanup="sudo pkg autoremove" \
+	background="feh --bg-fill --no-fehbg"

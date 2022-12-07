@@ -1,0 +1,2 @@
+#!/usr/local/bin/dash
+printf "$(top |grep -Em2 '^(Mem):' | awk '{print $2}')/$(top |grep -Em2 '^(Mem):' | awk '{print $10}')"

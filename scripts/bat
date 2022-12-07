@@ -1,0 +1,9 @@
+#!/usr/local/bin/dash
+
+if [ "$(upower -i $(upower -e) | grep state | awk '{print $2}' 2>&1)" = "charging" ]; then
+	exit
+else
+	if [ "$(upower -i $(upower -e | grep dev.battery.0) | grep percentage | awk '{print $2}' | sed 's/%//' 2>&1)" -lt "10" ]; then
+		notify-send "Suspending..."; acpiconf -s 3
+	fi
+fi

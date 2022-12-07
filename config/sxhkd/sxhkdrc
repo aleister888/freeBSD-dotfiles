@@ -1,0 +1,48 @@
+super + Return
+	st
+super + F1
+	arandr
+super + F2
+	firefox
+super + F3
+	st -e lf
+super + F4
+	rhythmbox
+super + d
+	dmenu_run
+super + shift + d
+	j4-dmenu-desktop
+super + F12
+	pavucontrol
+super + z
+	playerctl previous
+super + x
+	playerctl play-pause
+super + c
+	playerctl next
+super + F5
+	intel_backlight decr
+super + F6
+	intel_backlight incr
+super + shift + k
+	xkill
+super + shift + F11
+	killall -u aleister
+super + p
+	import -window root jpg:- | xclip -selection clipboard -t image/png; notify-send 'Captura copiada al Portapapeles'
+super + shift + p
+	import png:- | xclip -selection clipboard -t image/png; notify-send 'Captura copiada al Portapapeles'
+super + alt + p
+	cd /home/aleister/Imágenes/Capturas/; import -window root $(date +'%Y_%m_%d-%H_%M_%S').jpg; notify-send 'Captura guardada en ~/Imágenes'
+super + alt + shift + p
+	cd /home/aleister/Imágenes/Capturas/; import $(date +'%Y_%m_%d-%H_%M_%S').jpg; notify-send 'Captura guardada en ~/Imágenes'
+super + t
+	pkill trayer ||	trayer --align center --edge top --expand false --width 5
+super + F11
+	$HOME/.local/scripts/sxhkd/dmenu-powermenu.sh
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5% && ~/.local/scripts/sxhkd/volume-notify.sh
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5% && ~/.local/scripts/sxhkd/volume-notify.sh
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle && ~/.local/scripts/sxhkd/volume-notify.sh

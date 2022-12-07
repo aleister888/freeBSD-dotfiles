@@ -1,0 +1,48 @@
+#!/bin/sh
+# File preview handler for lf.
+# Dependencies (FreeBSD):
+# mediainfo bat cdrtools odt2txt gnupg
+# chafa ffmpegthumbnailer xdotool
+#
+# For the script you need to know first how many
+# screen pixels equal to 1 column on your terminal
+# for that run:
+# echo $(($(xdotool getactivewindow getwindowgeometry --shell | grep WIDTH | sed 's/[^0-9]//g') / $COLUMNS))
+#
+# This will output a number that you should put into
+# the "PIXELS" variable.
+#
+# Remember that everytime you change font or fontsize this number
+# might change and you will need to change it inside this script
+# everytime you do so:
+#
+# NOTES:
+# The script will get the window width of the focused window. If
+# lf doesn't have the focus the preview size will be wrong.
+# Also the script asumes that the preview takes 1/3 of the window
+# for that to be true, put this in your lf config:
+# 	set ratios 1:1:1
+
+PIXELS=8
+
+WIDTH=$(($(xdotool getactivewindow getwindowgeometry --shell | grep WIDTH | sed 's/[^0-9]//g')/$PIXELS/3))
+
+read -r LINES COLUMNS
+
+case "$(file --dereference --brief --mime-type -- "$1")" in
+	text/* | */xml | application/json) bat -p --terminal-width "$4" -f "$1" ;;
+	text/troff) man ./ "$1" | col -b ;;
+        audio/* | application/octet-stream) mediainfo "$1" || exit 1;;
+        */x-iso9660-image ) isoinfo -d -i "$1" || exit 1;;
+        *opendocument*) odt2txt "$1" ;;
+	application/pgp-encrypted) gpg -d -- "$1" ;;
+	image/*) chafa --size $WIDTH "$1" ;;
+        */pdf) pdftotext "$1" - ;;
+	video/* )
+		CACHE="${XDG_CACHE_HOME:-$HOME/.cache}/lf/thumb.$(stat --printf '%n\0%i\0%F\0%s\0%W\0%Y' -- "$(readlink -f "$1")" | sha256sum | awk '{print $1}')"
+		[ ! -f "$CACHE" ] && ffmpegthumbnailer -i "$1" -o "$CACHE.jpg" -s 0
+		chafa --size $WIDTH "$CACHE.jpg"
+		;;
+	*/*) mediainfo "$1" || exit 1;;
+esac
+exit 1

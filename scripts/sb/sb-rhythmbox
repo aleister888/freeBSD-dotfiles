@@ -1,0 +1,7 @@
+#!/usr/local/bin/dash
+
+if [ "$(playerctl status -p rhythmbox 2>&1)" = "No players found" ]; then
+	echo ""
+else
+	playerctl metadata --player=rhythmbox --format ' {{ status }}: {{ artist }} - {{ title }}'
+fi

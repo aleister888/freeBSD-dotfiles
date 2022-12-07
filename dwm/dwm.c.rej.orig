@@ -1,0 +1,13 @@
+@@ -99,11 +93,9 @@
+ 	int basew, baseh, incw, inch, maxw, maxh, minw, minh, hintsvalid;
+ 	int bw, oldbw;
+ 	unsigned int tags;
+-	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;
+-	pid_t pid;
++	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
+ 	Client *next;
+ 	Client *snext;
+-	Client *swallowing;
+ 	Monitor *mon;
+ 	Window win;
+ };

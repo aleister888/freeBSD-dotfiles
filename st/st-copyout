@@ -1,0 +1,14 @@
+#!/usr/local/bin/dash
+# Using external pipe with st, give a dmenu prompt of recent commands,
+# allowing the user to copy the output of one.
+# Packages required:
+# xclip gawk gsed gnugrep
+# By Jaywalker and Luke, modified for freeBSD compability
+tmpfile=$(mktemp /tmp/st-cmd-output.XXXXXX)
+trap 'rm "$tmpfile"' 0 1 15
+gsed -n "w $tmpfile"
+gsed -i 's/\x0//g' "$tmpfile"
+ps1="$(ggrep "\S" "$tmpfile" | tail -n 1 | gsed 's/^\s*//' | cut -d' ' -f1)"
+chosen="$(ggrep -F "$ps1" "$tmpfile" | gsed '$ d' | tail -r | dmenu -p "Copy which command's output?" -l 10 | gsed 's/[^^]/[&]/g; s/\^/\\^/g')"
+eps1="$(echo "$ps1" | gsed 's/[^^]/[&]/g; s/\^/\\^/g')"
+gawk "/^$chosen$/{p=1;print;next} p&&/$eps1/{p=0};p" "$tmpfile" | tail -n +2 | xclip -selection clipboard
