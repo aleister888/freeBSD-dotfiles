@@ -4,10 +4,6 @@
 
 ![image](https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/2022_12_08-02_34_54.jpg)
 
-## What's missing?
-
-Install script with gnu stow for autoinstalling dotfiles.
-
 ## ADD THESE LINES TO THESE FILES
 
 ### /etc/crontab
@@ -78,8 +74,8 @@ my own username `aleister` and dont use the `$USER` variable or `$HOME`.
 - init.vim `(lines 131-134)`: replace aleister
 
 ```
-autocmd BufWritePost ~/.freeBSD-dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd ~/.local/src/freeBSD-dotfiles/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
-autocmd BufWritePost ~/.freeBSD-dotfiles/dwm/config.h !pkexec sh -c 'cd ~/.local/src/freeBSD-dotfiles/dwm/; make install'
-autocmd BufWritePost ~/.freeBSD-dotfiles/dmenu/config.h !pkexec sh -c 'cd ~/.local/src/freeBSD-dotfiles/dmenu/; make install'
-autocmd BufWritePost ~/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
+autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd ~/.dotfiles/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
+autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd ~/.dotfiles/dwm/; make install'
+autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd ~/.dotfiles/dmenu/; make install'
+autocmd BufWritePost ~/.dotfiles/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
 ```
