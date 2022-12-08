@@ -1,9 +1,9 @@
 #!/usr/local/bin/dash
-option0=" lock"
-option1=" logout"
-option2="鈴 suspend"
-option3=" shutdown"
-option4=" reboot"
+option0="  lock"
+option1="  logout"
+option2="鈴  suspend"
+option3="  shutdown"
+option4="  reboot"
 options="$option0\n$option1\n$option2\n$option3\n$option4"
 chosen="$(echo "$options" | dmenu -l 9 -p "")"
 case $chosen in
