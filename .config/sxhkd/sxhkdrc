@@ -15,7 +15,7 @@ super + d
 super + shift + d
 	j4-dmenu-desktop
 super + F12
-	pavucontrol
+	pavucontrol-qt
 super + z
 	playerctl previous
 super + x

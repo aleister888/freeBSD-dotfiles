@@ -85,3 +85,7 @@ autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd /home/aleister/.
 autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dmenu/; make install'
 autocmd BufWritePost ~/.dotfiles/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
 ```
+
+```
+autocmd Filetype markdown map <M-q> :! pandoc % -o $(echo % \| sed 's/md$/pdf/') --pdf-engine=xelatex --lua-filter="/home/aleister/.config/pandoc_filters/columns.lua" --variable mainfont="Linux Biolinum" -V geometry:margin=0.75in -V fontsize=14pt <CR>
+```

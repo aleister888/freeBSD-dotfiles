@@ -18,7 +18,7 @@ static const char col_cyan[]        = "#b39e66";
 static const char tag_foreground[]        = "#bbbbbb";
 static const char tag_background[]        = "#222222";
 static const char seltag_foreground[]        = "#222222";
-static const char seltag_background[]        = "#ebdbb2";
+static const char seltag_background[]        = "#b39e66";
 // Middle
 static const char mid_foreground[]        = "#bbbbbb";
 static const char mid_background[]        = "#222222";
