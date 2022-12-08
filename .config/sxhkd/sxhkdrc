@@ -3,9 +3,9 @@ super + Return
 super + F1
 	arandr
 super + F2
-	linux-brave
-super + shift + F2
 	firefox
+super + shift + F2
+	linux-brave
 super + F3
 	st -e lf
 super + F4

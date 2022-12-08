@@ -2,6 +2,7 @@
 cat <<EOF | xmenu | dash &
 IMG:/home/aleister/.local/xmenu-icons/internet-web-browser.png		Internet
 	IMG:/home/aleister/.local/xmenu-icons/firefox.png		Firefox			firefox
+	IMG:/home/aleister/.local/xmenu-icons/brave.png			Brave			linux-brave
 	IMG:/home/aleister/.local/xmenu-icons/thunderbird.png		Thunderbird		thunderbird
 	IMG:/home/aleister/.local/xmenu-icons/syncthing-gtk.png		Syncthing		xdg-open http://127.0.0.1:8384
 	IMG:/home/aleister/.local/xmenu-icons/qbittorrent.png		qBittorrent		qbittorrent
@@ -30,8 +31,11 @@ IMG:/home/aleister/.local/xmenu-icons/applications-office.png		Office
 	IMG:/home/aleister/.local/xmenu-icons/accessories-notes.png		Aula Virtual		xdg-open https://aulavirtual.ual.es/
 	IMG:/home/aleister/.local/xmenu-icons/system-users.png			Campus Virtual		xdg-open https://campus.ual.es/
 
-IMG:/home/aleister/.local/xmenu-icons/distributor-logo-freebsd.png		System Tools
+IMG:/home/aleister/.local/xmenu-icons/applications-utilities.png		Tools/Utilities
 	IMG:/home/aleister/.local/xmenu-icons/htop.png				HTop			st -e htop
+	IMG:/home/aleister/.local/xmenu-icons/keepassxc.png		KeePassXC	keepassxc
+	IMG:/home/aleister/.local/xmenu-icons/virtualbox-ose.png	VirtualBox	/usr/local/bin/virtualbox_fusion
+	IMG:/home/aleister/.local/xmenu-icons/kfontview.png		Font Manager	font-manager
 	IMG:/home/aleister/.local/xmenu-icons/configurator.png			Settings
 		IMG:/home/aleister/.local/xmenu-icons/cups.png				Cups			xdg-open http://localhost:631/
 		IMG:/home/aleister/.local/xmenu-icons/grandr.png			Display Settings	arandr
@@ -39,16 +43,8 @@ IMG:/home/aleister/.local/xmenu-icons/distributor-logo-freebsd.png		System Tools
 		IMG:/home/aleister/.local/xmenu-icons/qt.png				Ajustes de QT		qt5ct
 		IMG:/home/aleister/.local/xmenu-icons/terminal.png			Terminal		st
 
-IMG:/home/aleister/.local/xmenu-icons/applications-utilities.png		Utilities
-	IMG:/home/aleister/.local/xmenu-icons/keepassxc.png		KeePassXC	keepassxc
-	IMG:/home/aleister/.local/xmenu-icons/virtualbox-ose.png	VirtualBox	/usr/local/bin/virtualbox_fusion
-	IMG:/home/aleister/.local/xmenu-icons/anydesk.png		Anydesk		anydesk
-	IMG:/home/aleister/.local/xmenu-icons/kfontview.png		Font Manager	font-manager
-
 IMG:/home/aleister/.local/xmenu-icons/firefox.png			Firefox			firefox
 IMG:/home/aleister/.local/xmenu-icons/system-file-manager.png		File-Manager		st -e lf
-IMG:/home/aleister/.local/xmenu-icons/nvim.png				Neovim			st -e nvim
-IMG:/home/aleister/.local/xmenu-icons/virtualbox-ose.png		VirtualBox		/usr/local/bin/virtualbox_fusion
 IMG:/home/aleister/.local/xmenu-icons/terminal.png			Terminal		st
 IMG:/home/aleister/.local/xmenu-icons/system-shutdown.png		Power
 	IMG:/home/aleister/.local/xmenu-icons/system-lock-screen.png	Lock			xlock -mode qix
