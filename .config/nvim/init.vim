@@ -147,7 +147,8 @@ autocmd Filetype tex map <M-q> :! arara % <CR>
 "open latex document
 autocmd Filetype tex map <M-w> :! zathura $(echo % \| sed 's/tex$/pdf/') & 2>/dev/null <CR><CR>
 
-" --- MARKDOWN ---
+" --- PANDOC ---
+" see https://github.com/dialoa/columns for info on lua-filter
 "open markdown document
 autocmd Filetype markdown map <M-w> :! zathura $(echo % \| sed 's/md$/pdf/') & 2>/dev/null <CR><CR>
 "compile markdown into pdf
