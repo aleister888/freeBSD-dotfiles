@@ -2,7 +2,7 @@
 
 `FreeBSD` dotfiles for my `Thinkpad X270`
 
-![image](https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/2022_12_07-18_06_22.jpg)
+![image](https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/2022_12_08-01_52_07.jpg)
 
 ## What's missing?
 
