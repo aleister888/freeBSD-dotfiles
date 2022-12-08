@@ -237,8 +237,6 @@ fi=00:\
 feh --no-fehbg --bg-fill /usr/local/share/pixmaps/background.jpg
 # App Launcher
 sxhkd &
-# Pulseaudio
-pulseaudio &
 # Compositor
 xcompmgr &
 # Network Manager
