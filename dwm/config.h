@@ -10,14 +10,32 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "FantasqueSansMono Nerd Font:bold:pixelsize=22:antialias=true:autohint=true" };
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#333333";
+static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#222222";
-static const char col_cyan[]        = "#484848";
+static const char col_gray4[]       = "#eeeeee";
+static const char col_cyan[]        = "#b39e66";
+// Left
+static const char tag_foreground[]        = "#bbbbbb";
+static const char tag_background[]        = "#222222";
+static const char seltag_foreground[]        = "#222222";
+static const char seltag_background[]        = "#ebdbb2";
+// Middle
+static const char mid_foreground[]        = "#bbbbbb";
+static const char mid_background[]        = "#222222";
+static const char selmid_foreground[]        = "#bbbbbb";
+static const char selmid_background[]        = "#222222";
+// Right
+static const char status_foreground[]        = "#222222";
+static const char status_background[]        = "#222222";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*               	    fg         		bg		border   */
+	[SchemeNorm]		= { col_gray3,		col_gray1,	col_gray2 },
+	[SchemeSel]		= { col_gray4,		col_cyan, 	col_cyan  },
+	[SchemeTagsNorm]	= { tag_foreground,	tag_background,	"#000000"  }, // Tagbar left unselected {text,background,not used but cannot be empty}
+	[SchemeTagsSel]		= { seltag_foreground,	seltag_background, "#000000"  }, // Tagbar left selected {text,background,not used but cannot be empty}
+	[SchemeInfoNorm]	= { mid_foreground,	mid_background,	"#000000"  }, // infobar middle  unselected {text,background,not used but cannot be empty}
+	[SchemeInfoSel]		= { selmid_foreground,	selmid_background, "#000000"  }, // infobar middle  selected {text,background,not used but cannot be empty}
+	[SchemeStatus]		= { status_foreground,	status_background, "#000000"  }, // Statusbar right {text,background,not used but cannot be empty}
 };
 
 typedef struct {
