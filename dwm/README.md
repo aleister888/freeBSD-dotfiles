@@ -38,3 +38,4 @@
 - Shift view clients
 - Steam
 - Status2d
+- Colorbar
