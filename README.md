@@ -78,7 +78,7 @@ my own username `aleister` and dont use the `$USER` variable or `$HOME`.
 - init.vim `(lines 131-134)`: replace aleister
 
 ```
-autocmd BufWritePost ~/.local/src/freeBSD-dotfiles/slstatus/config.h !pkexec sh -c 'cd /home/aleister/.local/src/freeBSD-dotfiles/slstatus/; make install' && killall -q slstatus; slstatus &
+autocmd BufWritePost ~/.local/src/freeBSD-dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd /home/aleister/.local/src/freeBSD-dotfiles/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
 autocmd BufWritePost ~/.local/src/freeBSD-dotfiles/dwm/config.h !pkexec sh -c 'cd /home/aleister/.local/src/freeBSD-dotfiles/dwm/; make install'
 autocmd BufWritePost ~/.local/src/freeBSD-dotfiles/dmenu/config.h !pkexec sh -c 'cd /home/aleister/.local/src/freeBSD-dotfiles/dmenu/; make install'
 autocmd BufWritePost ~/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
