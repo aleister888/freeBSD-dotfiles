@@ -1,10 +1,6 @@
 #!/usr/local/bin/dash
-# prints battery level and charging status
+# prints battery level
 echo $(
-if [ "$(upower -i $(upower -e) | grep state | awk '{print $2}' 2>&1)" = "charging" ]; then
-	echo "CHARGING: "
-else
-        echo ""
-fi
-upower -i $(upower -e | grep dev.battery.1) | grep percentage | awk '{print $2}'
-upower -i $(upower -e | grep dev.battery.0) | grep percentage | awk '{print $2}')
+	upower -i $(upower -e | grep dev.battery.1) | grep percentage | awk '{print $2}' | sed 's/[^0-9]//g'
+	upower -i $(upower -e | grep dev.battery.0) | grep percentage | awk '{print $2}' | sed 's/[^0-9]//g'
+)

@@ -1,6 +1,5 @@
 #!/usr/local/bin/dash
 # prints volume
 vol="$(pamixer --get-volume)"
-[ $(pamixer --get-mute) = true ] && echo "[X VOL $vol%]" && exit
-#echo "[📢 VOL $vol%]"
-echo "[ VOL $vol%]"
+[ $(pamixer --get-mute) = true ] && echo "MUTED" && exit
+echo "$vol%"
