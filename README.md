@@ -75,9 +75,9 @@ into png.
 ## User-specific configs
 
 These dotfiles are just for personal use, so many things are configured for
-my own username `aleister` and dont use the `$USER` variable or `$HOME`.
+my own username `aleister` and dont use the `USER` or `HOME` variable.
 
-- init.vim `(lines 131-134)`: replace aleister
+- init.vim `(lines 131-134)`: replace `aleister` with your user
 
 ```
 autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd /home/aleister/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
