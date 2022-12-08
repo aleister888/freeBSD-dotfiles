@@ -128,9 +128,9 @@ endfunction
 
 
 " --- AUTOCOMPILE/RESTART ---
-autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd ~/.dotfiles/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
-autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd ~/.dotfiles/dwm/; make install'
-autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd ~/.dotfiles/dmenu/; make install'
+autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd /home/aleister/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
+autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dwm/; make install'
+autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dmenu/; make install'
 autocmd BufWritePost ~/.dotfiles/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
 
 " --- COMPILING DOCUMENTS ---
