@@ -244,7 +244,7 @@ xcompmgr &
 # Network Manager
 sudo networkmgr &
 # Status bar
-slstatus &
+dwmblocks &
 # Polkit
 /usr/local/libexec/polkit-gnome-authentication-agent-1 &
 # Keyring

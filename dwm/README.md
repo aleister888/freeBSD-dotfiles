@@ -37,3 +37,4 @@
 - Scratchpads
 - Shift view clients
 - Steam
+- Status2d

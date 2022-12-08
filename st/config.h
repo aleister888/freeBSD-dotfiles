@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static const char *font = "agave Nerd Font Mono:pixelsize=16:antialias=true:autohint=true";
+static const char *font = "agave Nerd Font Mono:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*

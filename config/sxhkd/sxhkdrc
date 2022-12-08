@@ -3,6 +3,8 @@ super + Return
 super + F1
 	arandr
 super + F2
+	linux-brave
+super + shift + F2
 	firefox
 super + F3
 	st -e lf

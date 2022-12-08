@@ -1,13 +1,9 @@
-@@ -99,11 +93,9 @@
- 	int basew, baseh, incw, inch, maxw, maxh, minw, minh, hintsvalid;
- 	int bw, oldbw;
- 	unsigned int tags;
--	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen, isterminal, noswallow;
--	pid_t pid;
-+	int isfixed, isfloating, isurgent, neverfocus, oldstate, isfullscreen;
- 	Client *next;
- 	Client *snext;
--	Client *swallowing;
- 	Monitor *mon;
- 	Window win;
- };
+@@ -1057,6 +1057,8 @@
+ 	updatewindowtype(c);
+ 	updatesizehints(c);
+ 	updatewmhints(c);
++	c->x = c->mon->mx + (c->mon->mw - WIDTH(c)) / 2;
++	c->y = c->mon->my + (c->mon->mh - HEIGHT(c)) / 2;
+ 	XSelectInput(dpy, w, EnterWindowMask|FocusChangeMask|PropertyChangeMask|StructureNotifyMask);
+ 	grabbuttons(c, 0);
+ 	if (!c->isfloating)
