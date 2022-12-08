@@ -42,6 +42,12 @@ hide-user-image = true
 draw-grid=false
 ```
 
+### /usr/local/etc/sudoers
+
+```
+%wheel ALL=(ALL:ALL) NOPASSWD: /sbin/shutdown,/sbin/poweroff,/sbin/reboot,/sbin/mount,/sbin/umount,/usr/sbin/pkg,/usr/local/bin/xclickroot,/usr/local/bin/networkmgr
+```
+
 ## GTK gruvbox theme from:
 
 - [GTK theme](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
