@@ -59,11 +59,19 @@ user-authority-in-system-dir=true
 - [GTK theme](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
 - [Icon theme](https://github.com/jmattheis/gruvbox-dark-gtk)
 
-## Papirus PNG
+## Useful Stuff
+
+### Papirus PNG Icons
 
 Since freeBSD still uses `imlib 1.7` it does not support `svg icon display`
 for apps like xmenu, dunst, etc. I converted all Papirus app icons
 into png.
+
+### Fix linux browsers
+
+As of now `https://github.com/mrclksr/linux-browser-installer` breaks linux
+chroots when upgrading with `./linux-browser-installer chroot upgrade` for a
+quick fix (it just relinks correctly a library) run `fix-linux-browser.sh` as root.
 
 ## Software used
 
