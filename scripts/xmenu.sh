@@ -13,6 +13,7 @@ IMG:/home/aleister/.local/xmenu-icons/multimedia.png			Sound & Video
 	IMG:/home/aleister/.local/xmenu-icons/vlc.png			VLC			vlc
 	IMG:/home/aleister/.local/xmenu-icons/pavucontrol.png		Pavucontrol		pavucontrol
 	IMG:/home/aleister/.local/xmenu-icons/easytag.png		EasyTAG			easytag
+	IMG:/home/aleister/.local/xmenu-icons/lmms.png			LMMS			lmms
 
 IMG:/home/aleister/.local/xmenu-icons/preferences-desktop-color.png	Graphics
 	IMG:/home/aleister/.local/xmenu-icons/gimp.png			GIMP			gimp
@@ -31,7 +32,7 @@ IMG:/home/aleister/.local/xmenu-icons/applications-office.png		Office
 	IMG:/home/aleister/.local/xmenu-icons/accessories-notes.png		Aula Virtual		xdg-open https://aulavirtual.ual.es/
 	IMG:/home/aleister/.local/xmenu-icons/system-users.png			Campus Virtual		xdg-open https://campus.ual.es/
 
-IMG:/home/aleister/.local/xmenu-icons/applications-utilities.png		Tools/Utilities
+IMG:/home/aleister/.local/xmenu-icons/applications-utilities.png		Tools & Utilities
 	IMG:/home/aleister/.local/xmenu-icons/htop.png				HTop			st -e htop
 	IMG:/home/aleister/.local/xmenu-icons/keepassxc.png		KeePassXC	keepassxc
 	IMG:/home/aleister/.local/xmenu-icons/bleachbit.png		Czkawka		czkawka_gui
