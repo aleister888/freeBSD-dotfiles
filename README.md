@@ -42,6 +42,12 @@ hide-user-image = true
 draw-grid=false
 ```
 
+### /usr/local/etc/lightdm/lightdm.conf
+
+```
+user-authority-in-system-dir=true
+```
+
 ### /usr/local/etc/sudoers
 
 ```
