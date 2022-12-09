@@ -38,6 +38,19 @@ quick fix (it just relinks correctly a library) run `fix-linux-browser.sh` as ro
 These dotfiles are just for personal use, so many things are configured for
 my own username `aleister` and dont use the `USER` or `HOME` variables.
 
+- `init.vim`: replace `aleister` with your user
+
+```
+autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd /home/aleister/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
+autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dwm/; make install'
+autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dmenu/; make install'
+autocmd BufWritePost ~/.dotfiles/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
+```
+
+```
+autocmd Filetype markdown map <M-q> :! pandoc % -o $(echo % \| sed 's/md$/pdf/') --pdf-engine=xelatex --lua-filter="/home/aleister/.config/pandoc_filters/columns.lua" --variable mainfont="Linux Biolinum" -V geometry:margin=0.75in -V fontsize=14pt <CR>
+```
+
 ## GTK gruvbox theme from:
 
 - [GTK theme](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
@@ -92,17 +105,4 @@ user-authority-in-system-dir=true
 
 ```
 %wheel ALL=(ALL:ALL) NOPASSWD: /sbin/shutdown,/sbin/poweroff,/sbin/reboot,/sbin/mount,/sbin/umount,/usr/sbin/pkg,/usr/local/bin/xclickroot,/usr/local/bin/networkmgr
-```
-
-- `init.vim`: replace `aleister` with your user
-
-```
-autocmd BufWritePost ~/.dotfiles/dwmblocks/blocks.h !pkexec sh -c 'cd /home/aleister/dwmblocks/; make install' && killall -q dwmblocks; dwmblocks &
-autocmd BufWritePost ~/.dotfiles/dwm/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dwm/; make install'
-autocmd BufWritePost ~/.dotfiles/dmenu/config.h !pkexec sh -c 'cd /home/aleister/.dotfiles/dmenu/; make install'
-autocmd BufWritePost ~/.dotfiles/.config/sxhkd/sxhkdrc !sh -c "pkill sxhkd; st -e devour sxhkd & disown"
-```
-
-```
-autocmd Filetype markdown map <M-q> :! pandoc % -o $(echo % \| sed 's/md$/pdf/') --pdf-engine=xelatex --lua-filter="/home/aleister/.config/pandoc_filters/columns.lua" --variable mainfont="Linux Biolinum" -V geometry:margin=0.75in -V fontsize=14pt <CR>
 ```
