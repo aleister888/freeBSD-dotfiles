@@ -13,8 +13,6 @@ IMG:/home/aleister/.local/xmenu-icons/multimedia.png			Sound & Video
 	IMG:/home/aleister/.local/xmenu-icons/vlc.png			VLC			vlc
 	IMG:/home/aleister/.local/xmenu-icons/pavucontrol.png		Pavucontrol		pavucontrol
 	IMG:/home/aleister/.local/xmenu-icons/easytag.png		EasyTAG			easytag
-	IMG:/home/aleister/.local/xmenu-icons/guitarix.png		Guitarix		guitarix
-	IMG:/home/aleister/.local/xmenu-icons/qjackctl.png		Qjackctl		qjackctl
 
 IMG:/home/aleister/.local/xmenu-icons/preferences-desktop-color.png	Graphics
 	IMG:/home/aleister/.local/xmenu-icons/gimp.png			GIMP			gimp
