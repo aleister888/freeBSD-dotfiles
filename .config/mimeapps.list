@@ -13,6 +13,12 @@ x-scheme-handler/mailto=userapp-Thunderbird-CBVNV1.desktop
 message/rfc822=userapp-Thunderbird-CBVNV1.desktop
 x-scheme-handler/mid=userapp-Thunderbird-CBVNV1.desktop
 application/pdf=org.pwmt.zathura-pdf-poppler.desktop
+audio/x-wav=vlc.desktop
+image/jpeg=nsxiv.desktop
+audio/mpeg=vlc.desktop
+audio/flac=vlc.desktop
+video/mp4=vlc.desktop
+inode/directory=lf.desktop
 
 [Added Associations]
 x-scheme-handler/http=userapp-Firefox-FG4QV1.desktop;
