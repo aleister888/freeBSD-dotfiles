@@ -48,8 +48,8 @@ IMG:/home/aleister/.local/xmenu-icons/system-file-manager.png		File-Manager		st 
 IMG:/home/aleister/.local/xmenu-icons/terminal.png			Terminal		st
 IMG:/home/aleister/.local/xmenu-icons/system-shutdown.png		Power
 	IMG:/home/aleister/.local/xmenu-icons/system-lock-screen.png	Lock			xlock -mode qix
-	IMG:/home/aleister/.local/xmenu-icons/system-reboot.png		Reboot			sudo reboot
-	IMG:/home/aleister/.local/xmenu-icons/system-shutdown.png	Shutdown		sudo poweroff
-	IMG:/home/aleister/.local/xmenu-icons/system-suspend.png	Suspend			notify-send "💤 Suspending..." && i3lock-fancy && acpiconf -s 3
 	IMG:/home/aleister/.local/xmenu-icons/system-log-out.png	Logout			killall -u aleister
+	IMG:/home/aleister/.local/xmenu-icons/system-suspend.png	Suspend			notify-send "💤 Suspending..." && i3lock-fancy && acpiconf -s 3
+	IMG:/home/aleister/.local/xmenu-icons/system-shutdown.png	Shutdown		pkexec poweroff
+	IMG:/home/aleister/.local/xmenu-icons/system-reboot.png		Reboot			pkexec reboot
 EOF
