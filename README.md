@@ -6,6 +6,43 @@
 
 <img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/2022_12_09-14_16_13.jpg" hspace="0px" vspace="150px">
 
+## Software used
+
+- [dwm](https://dwm.suckless.org/)
+- [st](https://st.suckless.org/)
+- [slstatus](https://tools.suckless.org/slstatus/)
+- [devour](https://github.com/salman-abedin/devour.git)
+- [trash-cli](https://github.com/andreafrancia/trash-cli.git)
+- [lsblk](https://www.freshports.org/sysutils/lsblk/)
+- [xmenu](https://github.com/phillbush/xmenu)
+- [xclickroot](https://github.com/phillbush/xclickroot)
+- [dragon-drop](https://github.com/mwh/dragon)
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
+
+## Useful Stuff
+
+### Papirus PNG Icons
+
+Since freeBSD still uses `imlib 1.7` it does not support `svg icon display`
+for apps like xmenu, dunst, etc. I converted all Papirus app icons
+into png.
+
+### Fix linux browsers
+
+As of now `https://github.com/mrclksr/linux-browser-installer` breaks linux
+chroots when upgrading with `./linux-browser-installer chroot upgrade` for a
+quick fix (it just relinks correctly a library) run `fix-linux-browser.sh` as root.
+
+## User-specific configs
+
+These dotfiles are just for personal use, so many things are configured for
+my own username `aleister` and dont use the `USER` or `HOME` variables.
+
+## GTK gruvbox theme from:
+
+- [GTK theme](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
+- [Icon theme](https://github.com/jmattheis/gruvbox-dark-gtk)
+
 ## ADD THESE LINES TO THESE FILES
 
 ### /etc/crontab
@@ -56,43 +93,6 @@ user-authority-in-system-dir=true
 ```
 %wheel ALL=(ALL:ALL) NOPASSWD: /sbin/shutdown,/sbin/poweroff,/sbin/reboot,/sbin/mount,/sbin/umount,/usr/sbin/pkg,/usr/local/bin/xclickroot,/usr/local/bin/networkmgr
 ```
-
-## GTK gruvbox theme from:
-
-- [GTK theme](https://github.com/jmattheis/gruvbox-dark-icons-gtk)
-- [Icon theme](https://github.com/jmattheis/gruvbox-dark-gtk)
-
-## Useful Stuff
-
-### Papirus PNG Icons
-
-Since freeBSD still uses `imlib 1.7` it does not support `svg icon display`
-for apps like xmenu, dunst, etc. I converted all Papirus app icons
-into png.
-
-### Fix linux browsers
-
-As of now `https://github.com/mrclksr/linux-browser-installer` breaks linux
-chroots when upgrading with `./linux-browser-installer chroot upgrade` for a
-quick fix (it just relinks correctly a library) run `fix-linux-browser.sh` as root.
-
-## Software used
-
-- [dwm](https://dwm.suckless.org/)
-- [st](https://st.suckless.org/)
-- [slstatus](https://tools.suckless.org/slstatus/)
-- [devour](https://github.com/salman-abedin/devour.git)
-- [trash-cli](https://github.com/andreafrancia/trash-cli.git)
-- [lsblk](https://www.freshports.org/sysutils/lsblk/)
-- [xmenu](https://github.com/phillbush/xmenu)
-- [xclickroot](https://github.com/phillbush/xclickroot)
-- [dragon-drop](https://github.com/mwh/dragon)
-- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts)
-
-## User-specific configs
-
-These dotfiles are just for personal use, so many things are configured for
-my own username `aleister` and dont use the `USER` or `HOME` variables.
 
 - `init.vim`: replace `aleister` with your user
 
