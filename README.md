@@ -10,7 +10,8 @@
 
 ```
 # Remove unwanted files
-*/1	*	*	*	*	_youruser_	rm ~/.xsession-errors ~/.xsession-errors.old ~/.local/share/fish/fish_history
+*/1	*	*	*	*	_youruser_    rm -rf ~/.xsession-errors ~/.xsession-errors.old ~/.local/share/fish/fish_history
+~/.config/Brave-Browser ~/.cache/BraveSoftware
 # Auto suspend laptop
 */1	*	*	*	*	_youruser_	~/.local/scripts/bat
 # Mount automatically unmounted drives
