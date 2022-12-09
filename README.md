@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/freebsd-logo.png" align="left" height="125px" hspace="10px">
+<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/freebsd-logo.png" align="left" height="120px">
 
 ## FreeBSD Dotfiles
 
