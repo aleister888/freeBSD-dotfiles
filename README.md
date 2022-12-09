@@ -1,4 +1,6 @@
-# FreeBSD Dotfiles
+<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/freebsd-logo.png" align="left" height="157px" hspace="0px" vspace="20px">
+
+## FreeBSD Dotfiles
 
 `FreeBSD` dotfiles for my `Thinkpad X270`
 
