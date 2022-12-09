@@ -24,4 +24,5 @@ alias \
 	update="sudo pkg upgrade" \
 	cache="sudo pkg clean -a" \
 	cleanup="sudo pkg autoremove" \
+	pkg_manually_installed="pkg query -e '%a = 0' %o" \
 	background="feh --bg-fill --no-fehbg"

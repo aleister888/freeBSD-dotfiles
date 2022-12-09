@@ -34,7 +34,7 @@ IMG:/home/aleister/.local/xmenu-icons/applications-office.png		Office
 IMG:/home/aleister/.local/xmenu-icons/applications-utilities.png		Tools/Utilities
 	IMG:/home/aleister/.local/xmenu-icons/htop.png				HTop			st -e htop
 	IMG:/home/aleister/.local/xmenu-icons/keepassxc.png		KeePassXC	keepassxc
-	IMG:/home/aleister/.local/xmenu-icons/virtualbox-ose.png	VirtualBox	/usr/local/bin/virtualbox_fusion
+	IMG:/home/aleister/.local/xmenu-icons/bleachbit.png		Czkawka		czkawka_gui
 	IMG:/home/aleister/.local/xmenu-icons/kfontview.png		Font Manager	font-manager
 	IMG:/home/aleister/.local/xmenu-icons/configurator.png			Settings
 		IMG:/home/aleister/.local/xmenu-icons/cups.png				Cups			xdg-open http://localhost:631/
