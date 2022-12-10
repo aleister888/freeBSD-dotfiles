@@ -255,3 +255,5 @@ syncthing --no-browser &
 sudo xclickroot sudo -u aleister /home/aleister/.local/scripts/xmenu.sh &
 # Blue light filter
 redshift -l $(curl -s "https://location.services.mozilla.com/v1/geolocate?key=geoclue" | jq -r '"\(.location.lat):\(.location.lng)"') &
+# Disable screensaving
+xset -dpms ; xset s off
