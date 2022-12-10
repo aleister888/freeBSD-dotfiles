@@ -6,12 +6,9 @@ dwm build for freeBSD
 
 ## Keybindings
 
-- `Super + b`
-	Toggle bar
-- `Super + q/w`
-	Previous/Next tag
-- `Super + Left/Right`
-	Focus Previous/Next window
+- `Super + b` Toggle bar
+- `Super + q/w` Previous/Next tag
+- `Super + Left/Right` Focus Previous/Next window
 - `Super + Ctrl + Left/Right` Shift focused window with master window
 - `Super + Shift + Left/Right` Move focused window
 - `Super + j/k` Add/Remove window to master
