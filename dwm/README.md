@@ -29,17 +29,17 @@ dwm build for freeBSD
 
 ## Patches
 
-- Always center
-- Attach above
-- Cfacts
-- Fixborders
-- Fullgaps
-- Hide vacant tags
-- Pertag
-- Rotatestack
-- Savefloats
-- Scratchpads
-- Shift view clients
-- Steam
-- Status2d
-- Colorbar
+- [Always center](https://dwm.suckless.org/patches/alwayscenter/dwm-alwayscenter-20200625-f04cac6.diff)
+- [Attach above](https://dwm.suckless.org/patches/attachabove/dwm-attachabove-6.2-20200421.diff)
+- [Cfacts](https://dwm.suckless.org/patches/cfacts/dwm-cfacts-20200913-61bb8b2.diff)
+- [Colorbar](https://dwm.suckless.org/patches/colorbar/dwm-colorbar-6.2.diff)
+- [Fixborders](https://dwm.suckless.org/patches/alpha/dwm-fixborders-6.2.diff)
+- [Fullgaps](https://dwm.suckless.org/patches/fullgaps/dwm-fullgaps-6.2.diff)
+- [Hide vacant tags](https://dwm.suckless.org/patches/hide_vacant_tags/dwm-hide_vacant_tags-6.3.diff)
+- [Pertag](https://dwm.suckless.org/patches/pertag/dwm-pertag-20200914-61bb8b2.diff)
+- [Rotatestack](https://dwm.suckless.org/patches/rotatestack/dwm-rotatestack-20161021-ab9571b.diff)
+- [Savefloats](https://dwm.suckless.org/patches/save_floats/dwm-savefloats-20181212-b69c870.diff)
+- [Scratchpads](https://dwm.suckless.org/patches/scratchpads/dwm-scratchpads-20200414-728d397b.diff)
+- [Shift view clients](https://raw.githubusercontent.com/bakkeby/patches/master/dwm/dwm-shiftviewclients-6.2.diff)
+- [Status2d](https://dwm.suckless.org/patches/status2d/dwm-status2d-6.3.diff)
+- [Steam](https://raw.githubusercontent.com/bakkeby/patches/master/dwm/dwm-steam-6.2.diff)
