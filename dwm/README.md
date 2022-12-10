@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/img/dwm.png" align="left" height="50px" vspace="100px">
+<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/img/dwm.png" align="left" height="50px" hspace="20px" vspace="110px">
 
 ## dwm - freeBSD
 
