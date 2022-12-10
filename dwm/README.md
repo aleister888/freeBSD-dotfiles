@@ -1,6 +1,6 @@
-<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/img/dwm.png" align="left" height="50px">
+<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/img/dwm.png" align="left" height="100px">
 
-## DWM - FreeBSD
+## dwm - freeBSD
 
 dwm build for freeBSD
 
