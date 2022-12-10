@@ -11,7 +11,7 @@ then cd into `.dotfiles` and run `./install.sh`
 
 ## Software used
 
-- [dwm](https://dwm.suckless.org/)
+- [dwm](https://dwm.suckless.org/) [(my build)](https://github.com/aleister888/freeBSD-dotfiles/tree/master/dwm)
 - [st](https://st.suckless.org/)
 - [slstatus](https://tools.suckless.org/slstatus/)
 - [devour](https://github.com/salman-abedin/devour.git)
