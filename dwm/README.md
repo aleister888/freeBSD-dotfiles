@@ -2,7 +2,7 @@
 
 ## DWM - FreeBSD
 
-`dwm` build for my freeBSD
+`dwm` build for freeBSD
 
 ## Keybindings
 
