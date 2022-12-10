@@ -4,7 +4,7 @@
 
 `FreeBSD` dotfiles for my `Thinkpad X270`
 
-<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/2022_12_09-14_16_13.jpg" hspace="0px" vspace="150px">
+<img src="https://raw.githubusercontent.com/aleister888/freeBSD-dotfiles/master/img/2022_12_09-14_16_13.jpg" hspace="0px" vspace="150px">
 
 Clone into HOME directory with `git clone https://github.com/aleister888/freeBSD-dotfiles.git .dotfiles`
 then cd into `.dotfiles` and run `./install.sh`
